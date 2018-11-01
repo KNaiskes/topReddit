@@ -1,0 +1,22 @@
+{
+  "name": "topreddit",
+  "version": "1.0.0",
+  "description": "Gather and represent Reddit top posts from a list of subreddits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KNaiskes/topReddit.git"
+  },
+  "author": "Kiriakos Naiskes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KNaiskes/topReddit/issues"
+  },
+  "homepage": "https://github.com/KNaiskes/topReddit#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
