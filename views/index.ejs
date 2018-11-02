@@ -10,7 +10,11 @@
 	<body>
 		<center>
 			<h2> Top reddit posts </h2> 
-			<h1> <%= results  %> </h1>
+
+		<% for(var i=0; i<results.length; i++) {%>
+		   <h2><%= results[i] %></h2>
+		<% } %>
+
 		</center>
 	</body>
 
