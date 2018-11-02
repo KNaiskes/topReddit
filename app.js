@@ -1,11 +1,16 @@
+const express = require("express");
 var request = require('request');
+var app = express()
 
-const POSTS_NUMBER = 5;
+const POSTS_NUMBER = 2;
 const REDDIT = "https://www.reddit.com/r/";
 const TOPICS = ["linux", "programming"]
 const LIMIT = ".json?limit=" + POSTS_NUMBER;
 
-//var link = REDDIT + TOPIC + LIMIT;
+const PORT = 8080;
+
+app.get("/", (req, res) => res.send("Testing"))
+app.listen(PORT);
 
 var link = "";
 
