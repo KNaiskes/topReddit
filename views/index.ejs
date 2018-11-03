@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="">
+		<link rel="stylesheet" type="text/css" href="index.css">
 
 		<title> Top reddit posts </title>
 	</head>
@@ -11,14 +11,15 @@
 		<center>
 			<h2> Top reddit posts </h2> 
 
+			<div id="results">
 			<ul>
-
 			<% for(var i=0; i<results.length; i++) {%>
 			<li><a href="<%= results[i].value %>"> <%=
 					results[i].key %></a></li>
 			<% } %>
 
 			</ul>
+			</div>
 
 		</center>
 	</body>

@@ -1,0 +1,27 @@
+body {
+	background-color: #F2F2F2;
+	margin: 20px;
+	padding: 10px;
+}
+
+#results { 
+	background-color: #F9F9F9;
+	float: left;
+	width: 100%;
+	overflow-y: auto;
+	height: 300px;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	clear: both;
+}
+
+li {
+	list-style-type: none;
+	font-size: 20px;
+}
+
+a {
+	color: #0B478E;
+	text-align: center;
+	padding: 14px 16px;
+}
