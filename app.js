@@ -22,7 +22,11 @@ for(l in TOPICS) {
 		json = JSON.parse(json);
 		for(i = 0; i < POSTS_NUMBER; i++) {
 			//console.log(json.data.children[i].data.title); 
-			results.push(json.data.children[i].data.title);
+			//results.push(json.data.children[i].data.title);
+			results.push({
+				key: json.data.children[i].data.title,
+				value: json.data.children[i].data.permalink
+			});
 		}
 	});
 }
