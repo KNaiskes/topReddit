@@ -11,9 +11,14 @@
 		<center>
 			<h2> Top reddit posts </h2> 
 
-		<% for(var i=0; i<results.length; i++) {%>
-		   <h2><%= results[i].value %></h2>
-		<% } %>
+			<ul>
+
+			<% for(var i=0; i<results.length; i++) {%>
+			<li><a href="<%= results[i].value %>"> <%=
+					results[i].key %></a></li>
+			<% } %>
+
+			</ul>
 
 		</center>
 	</body>

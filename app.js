@@ -5,7 +5,7 @@ var app = express()
 app.set("view engine", "ejs");
 
 const POSTS_NUMBER = 2;
-const REDDIT = "https://www.reddit.com/r/";
+const REDDIT = "https://www.reddit.com/";
 const TOPICS = ["linux", "programming"]
 const LIMIT = ".json?limit=" + POSTS_NUMBER;
 
@@ -16,16 +16,14 @@ var link = "";
 var results = [];
 
 for(l in TOPICS) {
-	link = REDDIT + TOPICS[l] + LIMIT;
+	link = REDDIT + "r/" + TOPICS[l] + LIMIT;
 
 	request(link, function (err, res, json) {
 		json = JSON.parse(json);
 		for(i = 0; i < POSTS_NUMBER; i++) {
-			//console.log(json.data.children[i].data.title); 
-			//results.push(json.data.children[i].data.title);
 			results.push({
 				key: json.data.children[i].data.title,
-				value: json.data.children[i].data.permalink
+				value: REDDIT + json.data.children[i].data.permalink
 			});
 		}
 	});
