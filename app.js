@@ -4,13 +4,12 @@ var app = express()
 
 app.set("view engine", "ejs");
 
-const POSTS_NUMBER = 2;
+const POSTS_NUMBER = 10;
 const REDDIT = "https://www.reddit.com/";
-const TOPICS = ["linux", "programming"]
+const TOPICS = [] //append the list with your topics
 const LIMIT = ".json?limit=" + POSTS_NUMBER;
 
 const PORT = 8080;
-
 
 var link = "";
 var results = [];
