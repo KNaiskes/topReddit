@@ -6,7 +6,7 @@ app.set("view engine", "ejs");
 
 const POSTS_NUMBER = 10;
 const REDDIT = "https://www.reddit.com/";
-const TOPICS = [] //append the list with your topics
+const TOPICS = ["linux","programming"] //append the list with your topics
 const LIMIT = ".json?limit=" + POSTS_NUMBER;
 
 const PORT = 8080;

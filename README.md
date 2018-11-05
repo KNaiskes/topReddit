@@ -2,8 +2,8 @@
 
 ## Dependencies
 
-- [node]
-- [npm]
+- node
+- npm
 
 ## Building and running
 ```

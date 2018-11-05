@@ -14,8 +14,10 @@
 			<div id="results">
 			<ul>
 			<% for(var i=0; i<results.length; i++) {%>
-			<li><a href="<%= results[i].value %>"> <%=
+			<p>
+			<li><a target="_blank" href="<%= results[i].value %>"> <%=
 					results[i].key %></a></li>
+			</p>
 			<% } %>
 
 			</ul>
